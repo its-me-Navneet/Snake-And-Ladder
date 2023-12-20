@@ -7,11 +7,15 @@ public class App {
 
         int pos =0; 
         
+        while(pos<100){ 
         int value = new Random().nextInt(6) + 1; 
 
         int option =new Random().nextInt(3) - 1 ;  
      
-         pos += (option)*value ;
+         pos += (option)*value ; 
+         pos=Math.max(0,pos) ;
+
+        }
             
     }
 }
