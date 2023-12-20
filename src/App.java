@@ -12,10 +12,9 @@ public class App {
 
         int option =new Random().nextInt(3) - 1 ;  
      
-         pos += (option)*value ; 
+         if(pos+ option*value <=100 ) pos += option*value ; 
          pos=Math.max(0,pos) ;
 
         }
-            
     }
 }
