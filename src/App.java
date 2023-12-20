@@ -6,7 +6,7 @@ public class App {
 
 
         int pos =0; 
-        
+        int cnt =0 ;
         while(pos<100){ 
         int value = new Random().nextInt(6) + 1; 
 
@@ -14,7 +14,8 @@ public class App {
      
          if(pos+ option*value <=100 ) pos += option*value ; 
          pos=Math.max(0,pos) ;
-
+         cnt++ ;
         }
+        System.out.println("Number of times the dice was played to win is "+ cnt);
     }
 }
