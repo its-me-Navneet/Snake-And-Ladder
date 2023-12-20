@@ -8,6 +8,10 @@ public class App {
         int pos =0; 
         
         int value = new Random().nextInt(6) + 1; 
+
+        int option =new Random().nextInt(3) - 1 ;  
+     
+         pos += (option)*value ;
             
     }
 }
